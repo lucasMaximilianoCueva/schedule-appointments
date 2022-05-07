@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Libre+Baskerville&family=Water+Brush&display=swap');
+
+
+h1 {
+  font-family: 'Libre Baskerville', serif;
+}
+
+@mixin flexAround {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.navContainer {
+  @include flexAround();
+  align-items: center;
+  min-height: 8vh;
+  padding: 20px 0%;
+  transition: all 0.9s ease;
+}
